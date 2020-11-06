@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--OpenButton-->
+      <a
+        class="waves-effect waves-light btn"
+        onclick="$('.tap-target').tapTarget('open')"
+        >Open tap target</a
+      >
+      <!--Close Button-->
+      <a
+        class="waves-effect waves-light btn"
+        onclick="$('.tap-target').tapTarget('close')"
+        >Close tap target</a
+      >
+
+      <div
+        class="fixed-action-btn direction-top active"
+        style="bottom: 45px; right: 24px"
+      >
+        <!--Element Showed-->
+        <a id="menu" class="btn btn-floating btn-large cyan">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+
+      <div
+        class="tap-target-wrapper"
+        style="right: -248px; bottom: -227px; position: fixed"
+      >
+        <div class="tap-target cyan" data-target="menu">
+          <!--Tap Target Structure-->
+          <div
+            class="tap-target-content white-text"
+            style="
+              width: 356px;
+              height: 300px;
+              top: 0px;
+              right: 0px;
+              bottom: 0px;
+              left: 0px;
+              padding: 56px;
+              vertical-align: bottom;
+            "
+          >
+            <h5>I am here</h5>
+            <p class="white-text">
+              Provide value and encourage return visits by introducing users to
+              new features and functionality at contextually relevant moments.
+            </p>
+          </div>
+        </div>
+        <div
+          class="tap-target-wave"
+          style="top: 244px; left: 244px; width: 112px; height: 112px"
+        >
+          <a class="btn btn-floating btn-large cyan tap-target-origin">
+            <i class="material-icons">menu</i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--container-->
+
+    <div style="height: 500px"></div>
+
+    <!--Import jQuery Library-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      M.AutoInit();
+
+      //   var instance = M.TapTarget.getInstance(elem);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".tap-target");
+        var instances = M.TapTarget.init(elems);
+      });
+    </script>
+  </body>
+</html>
