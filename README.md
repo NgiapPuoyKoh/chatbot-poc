@@ -185,20 +185,8 @@ Soruce: [PythonGRid'(https://pythongrid.com/)
 
 [Contact Us] (assets/images/contactUs.png)
 
-
 Soruce:
 [25 Best Contact Us Page Examples to Inspire Yours (Updated for 2020)](https://www.impactplus.com/blog/best-contact-us-page-examples)
-
-
-UX Sources Credits
-  - ![Chat UI Welcome Screen from Vlad Tyzum][https://www.digital22.com/insights/beautiful-chatbot-ui-examples-that-will-definitely-inspire-you#a6]
-  - ![Dashboard and Chat](https://dribbble.com/shots/10978875-Insurance-app-dashboard-Chat)
-  - ![Direct Messaging](https://dribbble.com/shots/10831579-013-Direct-Messaging-UI-Challenge)
-
-Alternate UX Sources
-  - ![Chatbot](https://dribbble.com/shots/10997646-Chatbot-for-US-police-departments)
-  - ![Create Chat Bots](https://dribbble.com/shots/10810904-Chat-Bots)
-  - ![Corporate Chat Widget](https://dribbble.com/shots/10770064-Corporate-chat-widget)
 
 
 ## Features
@@ -324,6 +312,7 @@ Answer Gitpod how to questions based on conversations in slack
  - GitPodhttpServer
  - GitPodclearcache
 
+```
 {topic:
     {
     _id:,
@@ -341,12 +330,13 @@ Answer Gitpod how to questions based on conversations in slack
     category:
     }
 }
-
+```
 
 ### User profile
 
 Access Status: Active, Inactive
 
+```
 {user:
 [
     _id:
@@ -356,20 +346,24 @@ Access Status: Active, Inactive
     "accessstatus"
 ]
 }
+```
 
 ### User Roles
 
 Role Types : user,moderator, admin, annotator
 
+```
 {role:
     [
     _id:
      roletype: 
     ]
 }
+```
 
 ### Rating
 
+```
 Rating: 
     {
         _id,
@@ -393,10 +387,11 @@ Rating:
     },
 
 }
-
+```
 
 ### Guest Contact
 
+```
 Guest: 
     {
         _id,
@@ -405,7 +400,7 @@ Guest:
         email: 1
         Request message:
     }
-
+```
 
 ## CRUD Functions
 
@@ -573,7 +568,6 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - #### Frequent User Goals
 
-\
 ### Further Testing
 
 
@@ -677,6 +671,17 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - [Chatbot Design](https://dribbble.com/tags/chatbot?page=19&s=latest)
 - [8 beautiful chatbot UI examples that will definitely inspire you](https://www.digital22.com/insights/beautiful-chatbot-ui-examples-that-will-definitely-inspire-you#a6)
+
+##### UX Sources Credits
+  - [Chat UI Welcome Screen from Vlad Tyzum][https://www.digital22.com/insights/beautiful-chatbot-ui-examples-that-will-definitely-inspire-you#a6]
+  - [Dashboard and Chat](https://dribbble.com/shots/10978875-Insurance-app-dashboard-Chat)
+  - [Direct Messaging](https://dribbble.com/shots/10831579-013-Direct-Messaging-UI-Challenge)
+
+##### 
+Alternate UX Sources
+  - [Chatbot](https://dribbble.com/shots/10997646-Chatbot-for-US-police-departments)
+  - [Create Chat Bots](https://dribbble.com/shots/10810904-Chat-Bots)
+  - [Corporate Chat Widget](https://dribbble.com/shots/10770064-Corporate-chat-widget)
 
 ### Content
 
